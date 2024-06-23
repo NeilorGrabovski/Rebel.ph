@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black !important  ;
+    height:100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin:0 auto;
+
+}
+
+.flex{
+    display: flex;
+}
+
+h2.titulo{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+.span-titulo-azul{
+    color: #31619b;
+}
+.span-titulo-vemelho{
+    color: #DA3E48;
+}
+/* estilo cabeçalho */
+/*
+vermelho: #DA3E48 
+azul: #31619b
+*/
+header{
+    padding: 30px 4%;
+    background-color: #000;
+    box-shadow: 0px 0px 30px #31619b77;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 7777;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: rgb(87, 87, 87);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 800;
+
+}
+header a:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.4);
+    transition: .2s;
+}
+header nav ul{
+    list-style-type: none;
+
+}
+header nav.menu_desktop li{
+    display: inline-block;
+    padding: 0 40px;
+}
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 25px;
+    font-weight: 800;
+    background-color:#DA3E48 ;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 50px #31619b;
+
+}
+
+/* estilo menu mobile */
+.btn-abrir-manu i{
+    color: #DA3E48;
+    font-size: 0px;
+}
+.menu-mobile{
+    background-color: #09131f;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 20%;
+
+    
+}
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+.menu-mobile nav ul li a{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 6%;
+    display: block;
+    transition: 0,5s;
+}
+.menu-mobile nav ul li a:hover{
+    background-color: #DA3E48;
+    transform: none;
+    font-weight: 800;
+
+}
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+.menu-mobile .btn-fechar i{
+    color: #DA3E48;
+    font-size: 30px;
+}
+
+.overlay-menu{
+    background-color: #09131fb5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+/* projetos */
+section .projetos{
+    padding: 40px 20%;
+    margin-top: 1004px;
+
+}
+.projetos .flex{
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.projetos .flex h2{
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.projetos .flex img{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 30px #31619b; 
+    border-radius: 3%;
+    transition: 1s;
+}
+
+/* footer */
+footer{
+    padding: 40px 4%;
+    box-shadow: 0px 0px 30px #DA3E48;
+
+}
+footer .flex{
+    justify-content: space-between;
+}
+
+.footer-titulo{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.line-footer .btn-social i{
+    font-size:40px;
+    color:#31619b ;
+    border:0;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px 10px;
+    
+}
+.borda{
+    border-top: 2px solid #31619b;
+}
+footer .line-footer{
+    padding: 10px;
+    text-align: center;
+}
+.voltar-topo i{
+
+    height: 50px;
+    width: 50px;
+    font-size:27px;
+    color:#DA3E48 ;
+    border:0;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px 5px;
+    position: relative;
+    animation: flutuar2 1s ease-in-out infinite alternate;
+}
+@keyframes flutuar2{
+    0%{
+        top:0;
+    
+    }
+    100%{
+        top:10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    /* classes gerais */
+    .flex{
+        flex-direction: column;
+    }
+    /* cabeçalho */
+    .menu_desktop, .btn-contato{
+        display:none;
+    }
+    .btn-abrir-manu i{
+        font-size: 40px;
+    }
+    .menu-mobile.abrir-menu{
+        width: 70%;
+        
+    }
+    
+
+    /* topo do site */
+    .topo-do-site h1{
+        font-size: 30px;
+    }
+    .topo-do-site .txt-topo-site p{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .img-topo-site{
+        display: none;
+    }
+    /* serviços */
+    section.serviços{
+        padding: 40px 10%;
+    }
+    section.serviços .flex{
+        padding-top: 30px;
+        align-items: center;
+    }
+    .serviços .serviços-box{
+        height: auto;
+        width: auto;
+        padding:auto;
+        margin-top: 0px;
+    }
+    /* sobre */
+    .sobre .txt-sobre h2{
+        font-size: 25px;
+    }
+    .sobre .txt-sobre h2 span{
+        font-size: 30px;
+    }
+    .sobre .txt-sobre p{
+        text-align:left;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .sobre .btn-social{
+        text-align: center;
+    }
+    /* portifolio */
+    section.portifolio{
+        padding: 40px 10%;
+    }
+    section.portifolio .flex{
+        padding: 40px;
+        align-items: center;
+        justify-content:center;
+        gap: 40px;
+    }
+
+    /* projetos */
+    .projetos .bloco-projeto{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .projetos .bloco-projeto img{
+      width: 100%;
+    }
+}

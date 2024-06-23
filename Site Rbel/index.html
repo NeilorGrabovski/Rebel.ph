@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- fim google fonts -->
+    <!-- boostrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- fim boostrap icons -->
+    <link rel="stylesheet" href="css.css ">
+    <script src="menu.js" defer></script>
+    <title>Rebel_PH</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#"><img src="asets/REBEL SEM RAIO.png" alt="logo rebel" width="100px"></a>
+                
+            </div>
+            <nav class="menu_desktop">
+                <ul>
+                    <li><a href="#topo-do-site">Inicio</a></li>
+                    <li><a href="#serviços">Serviços</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                </ul>
+            </nav>
+            <div class="btn-contato">
+                <a href="#footer">
+                    <button>CONTATO</button>
+                </a>
+            </div><!--btn-contato-->
+            <div class="btn-abrir-manu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div><!--btn-abrir-manu-->
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#topo-do-site">Inicio</a></li>
+                    <li><a href="#serviços">Serviços</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#footer"><H1 class="contatoCel">Contato</H1></a></li>
+                    </ul>
+                </nav>
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div><!--interface-->
+    </header>
+
+    <main>
+        <a name="topo-do-site"></a>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1><span class="span-vemelho">Rebel</span><span class="span-azul">.</span><span class="span-vemelho">PH </span><br>Retratando musicas em imagens<span class="span-azul">.</span></h1>
+                        <p>Oii tudo bem? Meu nome é Any e convido você a explorar as fotos que eu tirei, onde cada clique captura a emoção e a intensidade desses momentos únicos. Com uma paixão ardente e única pela música, transformo cada som em imagens que te farão sentir como se estivesse lá, vivendo cada acorde e batida. A música tem o poder de transformar vidas, de nos transportar para outra dimensão, e é essa magia que procuro eternizar em cada foto. </p>
+                        <p>Confira meu trabalho e embarque nessa viagem visual, onde o poder da música não só é eternizado, mas também celebra a energia que faz a vida ser diferente. </p>
+                        <div class="btn-contato">
+                            <a href="#portfolio"><button>VER PORTFOLIO</button></a>
+                        </div>
+                    </div>
+                    <div class="img-topo-site">
+                        <img class="perfil-topo-site" src="asets/rebel arte.png" alt="" width="400">
+                    </div>
+                </div>
+            </div><!--interface-->
+            <a name="serviços"></a>
+        </section>
+
+        <section class="serviços">
+            <h2 class="titulo"><span class="span-titulo-azul">-</span>Serviços<span class="span-titulo-vemelho">-</span></h2>
+            <div class="flex">
+                <div class="serviços-box">
+                    <i class="bi bi-camera"></i>
+                    <h3>Fotografia</h3>
+                    <p>Fotos com estilos únicos que representam a essência da banda, capturando a energia do show.</p>
+                </div><!--serviços-box1-->
+                <div class="serviços-box">
+                    <i class="bi bi-camera-reels"></i>
+                    <h3>Filmagens</h3>
+                    <p>Faço gravações e edições dos shows, para que a banda divulgue de uma maneira chamativa seus shows. </p>
+                </div><!--serviços-box2-->
+                <div class="serviços-box">
+                    <i class="bi bi-brush"></i>
+                    <h3>Design gráfico</h3>
+                    <p>Crio artes para divulgação e logos.</p>
+                </div><!--serviços-box3-->
+                <a name="portfolio"></a>
+            </div><!--flex-->
+            
+        </section>
+
+        <section class="portfolio">
+            <div class="interface">
+                <h2 class="titulo"><span class="span-titulo-azul">-</span>Portfolio<span class="span-titulo-vemelho">-</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(asets/projetos/projeto.png);">
+                        <div class="overlay"><a href="indigans/indigans.html" target="_blank"><h2 class="link-portfolio">Indigans</h2></a></div>
+                    </div>
+                    <div class="img-port" style="background-image: url(asets/projetos/projeto\ TOH.png);">
+                        <div class="overlay"><a href="thwouverheads/theouverheads.html" target="_blank"><h2 class="link-portfolio">The OverHeads</h2></a></div>
+                    </div>
+                    <div class="img-port" style="background-image: url(asets/projetos/PROJETO\ BLOOD.png);">
+                        <div class="overlay"><a href="blood/blood.html" target="_blank"><h2 class="link-portfolio">BloodyMary<br>Shampoo</h2></a></div>
+                    </div>
+                </div><!--felx-->
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(asets/projetos/projeto\ hw.png);">
+                        <div class="overlay"><a href="hardways/hardways.html" target="_blank"><h2 class="link-portfolio">Hardways</h2></a></div>
+                    </div>
+                    <div class="img-port" style="background-image: url(asets/projetos/projeto\ jeffs.png);">
+                        <div class="overlay"><a href="jeffs/jeffs.html" target="_blank"><h2 class="link-portfolio">Jeff's Band</h2></a></div>
+                    </div>
+                    <div class="img-port" style="background-image: url(asets/projetos/projeto\ flow.png);">
+                        <div class="overlay"><a href="FlowDrive/flowdrive.html" target="_blank"><h2 class="link-portfolio" target="_blank">FlowDrive</h2></a></div>
+                    </div>
+                </div><!--felx-->
+
+            </div><!--interface-->
+            <a name="sobre"></a>
+        </section>
+
+        <section class="sobre">
+            <div class="interface">
+                <h2 class="titulo"><span class="span-titulo-azul">-</span>Sobre<span class="span-titulo-vemelho">-</span></h2>
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img class="perfil-any" src="asets/any perfil.jpg" alt="">
+                    </div><!--img-sobre-->
+                    <div class="txt-sobre">
+                    <h2 class="nome-any"><span class="span-titulo-vemelho">ANIELY </span> SCHNEICHER <span class="span-titulo-azul">.</span></h2>
+                    <P>Oii tudo bem? Prazer, nome é Aniely Schneicher e desde muito jovem a música sempre foi a minha paixão, uma paixão que me fez aprender vários instrumentos e consequentemente participar de bandas que foram essenciais para a minha compreensão sobre a arte e a conexão que a música nos proporciona.</P>
+                    <P>Além da música, descobri outra grande paixão: a fotografia. Percebi que podia capturar a intensidade e a essência desses momentos únicos. Comecei a fotografar e rapidamente, isso se expandiu para shows de outras bandas e eventos musicais. Minha missão se tornou clara: eternizar a alma dos shows, a energia dos artistas e a conexão com o público através das minhas fotos.  </P>
+                    <P>Hoje, continuo vivendo entre acordes e cliques, explorando novos ângulos e sons, sempre em busca de explorar essa arte. Espero que minhas imagens possam transmitir a mesma emoção e paixão que sinto ao criar e viver cada um desses momentos.  </P>
+                        
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+            
+        </section>
+    </main>
+    
+    <footer>
+        <a name="footer"></a>
+        <div class="inteface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="asets/rebel arte.png"  width="100px">
+                    </div>
+                    <div class="frase">
+                        <h2 class="footer-titulo">Capturando a <span class="span-titulo-azul">ESSÊNCIA</span>, a <span class="span-titulo-vemelho">PAIXÃO </span> e a <span class="span-titulo-azul">ENERGIA</span> da <span class="span-titulo-vemelho">MUSICA</span>.</h2>
+                    </div>
+                    <div class="boxctt">
+                        <div class="ctt">
+                            <h2 class="titulo"><span class="span-titulo-azul">-</span>Contato<span class="span-titulo-vemelho">-</span></h2>
+                        </div>
+                        <div class="btn-social">
+                            <a href="https://www.instagram.com/_rebel.ph?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="bi bi-instagram"></i></a>
+                            <a href="https://wa.me/5542998726536 "><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                     </div> <!--boxctt-->
+                </div><!--flex-->
+            </div><!--line-footer-->
+            
+            <div class="line-footer borda">
+                <div class="voltar-topo">
+                    <a href="#"><i class="bi bi-arrow-up-circle"></i></a>
+                </div>
+            </div><!--line-footer-->
+        </div>
+    </footer>
+</body>
+</html>
